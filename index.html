@@ -2,207 +2,310 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title></title>
+
+    <title>PORTFOLIO</title>
 
   </head>
   <style type="text/css">
-      body{
-        margin: 0;
-        padding: 0;
-        width:100%;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color:#DADDE1;
-      }
-      #menu{
-        background-color:#fff;
-        box-shadow: 0px .5px 10px #000;
-        line-height:60px;
-        height:60px;
-        color:#000;
-        text-align:center;
-        font-size:25px;
-        animation-name:page;
-        animation-duration: 3s;
-        transition: 2s;
 
-      }
-      #menu a {
-        transition: 2s;
-        text-decoration: none;
+  body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#DADDE1;
+  }
+  #miniscreen{
+    display:none;
+  }
+  #menu{
+    background-color:#fff;
+    box-shadow: 0px .5px 10px #000;
+    line-height:60px;
+    height:60px;
+    color:#000;
+    text-align:center;
+    font-size:25px;
+    animation-name:page;
+    animation-duration: 3s;
+    transition: 2s;
 
-      }
+  }
+  #menu a {
+    transition: 2s;
+    text-decoration: none;
 
-      #menu a:hover {
-        transition: 0s;
-        font-size:30px;
-      }
-      #content {
-        margin:50px;
-        height:470px;
-        display: flex;
+  }
 
-      }
-      #contentBox{
-        display:flex;
-        margin:0;
-        padding:0;
-        flex-direction: column;
+  #menu a:hover {
+    transition: 0s;
+    font-size:30px;
+  }
+  #content {
+    margin:50px;
+    height:470px;
+    display: flex;
 
-      }
-      .details{
-        flex:2;
-        background-color:#fff;
-        border-radius: 5px;
-        padding:20px;
-        height:auto;
-        animation-name:example;
-        animation-duration: 3s;
+  }
+  #contentBox{
+    display:flex;
+    margin:0;
+    padding:0;
+    flex-direction: column;
 
-
-      }
-      .details_2{
-        display:flex;
-        background-color:#fff;
-        margin-left:5px;
-        border-radius: 5px;
-        height:145px;
-        padding:20px;
-
-        animation-name: example2;
-        animation-duration: 3s;
-
-      }
-
-      .details_3{
-
-        background-color:#fff;
-        margin-left:5px;
-        border-radius: 5px;
-        height:145px;
-        padding:20px;
-        animation-name: example2;
-        animation-duration: 4s;
-      }
+  }
+  .details{
+    flex:2;
+    background-color:#fff;
+    border-radius: 5px;
+    padding:20px;
+    height:auto;
+    animation-name:example;
+    animation-duration: 3s;
 
 
-      #box1{
-        background-color:red;
+  }
+  .details_2{
+    display:flex;
+    background-color:#fff;
+    margin-left:5px;
+    border-radius: 5px;
+    height:145px;
+    padding:20px;
 
-      }
-      #box2{
-        background-color:green;
-      }
-      #image{
-        width:160px;
-        height:160px;
-        background-color:#fff;
-      }
-      #detail_right{
-        font-size:15px;
+    animation-name: example2;
+    animation-duration: 3s;
 
+  }
 
-      }
-      #content div{
+  .details_3{
 
-      }
-      #footer{
-        display: flex;
-        flex-direction: row;
-      }
-      #footer div{
-        flex: 1;
-        margin:5px;
-        background-color:red;
-      }
-      #detail_right a {
-        text-decoration: none;
-
-      }
-      .anitext{
-        animation-name: page;
-        animation-duration: 4s;
-      }
-
-      @keyframes example {
-        0%   {
-          opacity: 0;
-          margin-top:100px;
-        }
-        100% {opacity: 1;}
-      }
-
-      @keyframes example2 {
-        0%   {
-          opacity: 0;
-          margin-top:100px;
-        }
-        100% {opacity: 1;}
-      }
-
-      @keyframes page {
-        0%   {
-           font-size:0px;
-        }
-        70% {
-          font-size:100px;
-        }
-        100% {font-size:30px;}
-      }
+    background-color:#fff;
+    margin-left:5px;
+    border-radius: 5px;
+    height:auto;
+    padding:20px;
+    animation-name: example2;
+    animation-duration: 4s;
+  }
 
 
+  #box1{
+    background-color:red;
 
+  }
+  #box2{
+    background-color:green;
+  }
+  #image{
+    width:160px;
+    height:160px;
+    background-color:#fff;
+  }
+  #detail_right{
+    font-size:15px;
+
+
+  }
+  #content div{
+
+  }
+  #footer{
+    display: flex;
+    flex-direction: row;
+  }
+  #footer div{
+    flex: 1;
+    margin:5px;
+    background-color:red;
+  }
+  #detail_right a {
+    text-decoration: none;
+
+  }
+  .anitext{
+
+  }
+
+  @keyframes example {
+    0%   {
+      opacity: 0;
+      margin-top:100px;
+    }
+    100% {opacity: 1;}
+  }
+
+  @keyframes example2 {
+    0%   {
+      opacity: 0;
+      margin-top:100px;
+    }
+    100% {opacity: 1;}
+  }
+
+  @keyframes page {
+    0%   {
+       font-size:0px;
+    }
+    70% {
+      font-size:100px;
+    }
+    100% {font-size:30px;}
+  }
+  @media only screen and (max-width: 600px) {
+  body {
+    background-color: #DADDE1;
+  }
+  #fullscreen{
+    display:none;
+  }
+  #miniscreen{
+    display: block
+  }
+
+  .mini_head{
+    background-color:#fff;
+    box-shadow: 0px .5px 10px #000;
+    line-height:40px;
+    height:40px;
+    color:#000;
+    text-align:center;
+    font-size:15px;
+
+  }
+  #mini_content{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  .mini_Box{
+    margin:10px;
+    padding:10px;
+    background-color: #fff;
+    animation-name: loading;
+    animation-duration: 2s;
+
+  }
+  #card{
+    display:flex;
+    flex-direction: row;
+  }
+  #mini_card2{
+    margin-left: 10px;
+  }
+  #mini_card2 a{
+    text-decoration: none;
+  }
+
+  @keyframes loading {
+    0%   {
+        margin-top:200px;
+        opacity: 0;
+    }
+
+    100% {opacity: 1;}
+  }
+
+}
 
   </style>
   <body>
-    <div id="menu" >
-      <a href="#">PORTFOLIO</a>
-    </div>
+    <div id="fullscreen">
+          <div id="menu" >
+            <a href="#">PORTFOLIO</a>
+          </div>
 
-    <div id="content">
-      <div class="details">
-        <p style="font-size:30px;margin:0px;"><strong class="anitext" style="font-size:50px;">L</strong>et us introduce</p>
-        <p style="font-size:20px;color:#000;">Hello, My name is Suthiphong Thaisuriya. My nickname is Jo.
-          I live in Chonburi. My inspiration is the Movie "The Social Network" and I want to be success as Mark.
-        <p style="font-size:30px;margin:0px;"><strong style="font-size:50px;">W</strong>ork expereince</p>
-        <p style="font-size:15px;">9471Network (2017-2018) <label style="color:#000">IT-Support</label>
-          <li style="margin-left:30px;">Install os (Window, program.)</li>
-          <li style="margin-left:30px;">Config Router AP. CCTV (NVR, Ip camera)</li>
-        <p style="font-size:15px;">Business Service Alliance (BSA) (2018-Present) <label style="color:#000">Outsource</label>
-          <li style="margin-left:30px;">Prototype Demo Project (Nodejs, Raspberry Pi,Arduino , Linux, MYSQL)</li>
-          <li style="margin-left:30px;">Software&Technology : Open SCADA, Docker</li>
-      </div>
-      <div id="contentBox">
-        <div class="details_2">
-            <div id="image" style="padding:0px;">
-              <img style="width:140px;height:140px;" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/14991954_1694196114227202_5804768724753502977_n.jpg?_nc_cat=111&_nc_ht=scontent.fbkk2-6.fna&oh=3b94540253e09a6a82873e55c764aaf3&oe=5D37E39E"></img>
-            </div>
-            <div id="detail_right" style="padding:0px;">
-              <label style="margin-left:0px;color:#365899;"><strong><a href="https://www.facebook.com/suthiphong.pinkartist">Jingjo Suthiphong Thaisuriya<a></strong></label>
-              <p style="margin:0;padding:0;margin-left:0px;font-size:15px;color:#90949c;margin-bottom:5px;">181 followers</p>
-              <div style="margin-left:0px;">
-                <label><i class="fa fa-address-book" style="font-size:24px"></i> 0999360904</label><br>
-                <label><i class="fa fa-facebook-official" aria-hidden="true" style="font-size:24px"></i><a href="https://www.facebook.com/suthiphong.pinkartist"> @facebook/suthiphong.pinkartist</a></label><br>
-                <label><i class="fa fa-rss" style="font-size:24px"></i> LINE ID : jk.stu</label><br>
-                <label><i class="fa fa-github" style="font-size:24px"></i><a href="https://github.com/exjob007"> @Jingjo_D</a></label><br>
+                  <div id="content">
+                            <div class="details">
+                              <p style="font-size:30px;margin:0px;"><strong class="anitext" style="font-size:50px;">L</strong>et us introduce</p>
+                              <p style="font-size:20px;color:#000;" class="content_Text1">Hello, My name is Suthiphong Thaisuriya. My nickname is Jo.
+                                I live in Chonburi. My inspiration is the Movie "The Social Network" and I want to be success as Mark.
+                              <p style="font-size:30px;margin:0px;"><strong style="font-size:50px;">W</strong>ork expereince</p>
+                              <p style="font-size:15px;">9471Network (2017-2018) <label style="color:#000">IT-Support</label>
+                                <li style="margin-left:30px;">Install os (Window, program.)</li>
+                                <li style="margin-left:30px;">Config Router AP. CCTV (NVR, Ip camera)</li>
+                              <p style="font-size:15px;">Business Service Alliance (BSA) (2018-Present) <label style="color:#000">Outsource</label>
+                                <li style="margin-left:30px;">Prototype Demo Project (Nodejs, Raspberry Pi,Arduino , Linux, MYSQL)</li>
+                                <li style="margin-left:30px;">Software&Technology : Open SCADA, Docker</li>
+                            </div>
+
+                              <div id="contentBox">
+                                <div class="details_2">
+                                    <div id="image" style="padding:0px;">
+                                      <img style="width:140px;height:140px;" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/14991954_1694196114227202_5804768724753502977_n.jpg?_nc_cat=111&_nc_ht=scontent.fbkk2-6.fna&oh=3b94540253e09a6a82873e55c764aaf3&oe=5D37E39E"></img>
+                                    </div>
+                                    <div id="detail_right" style="padding:0px;">
+                                      <label style="margin-left:0px;color:#365899;"><strong><a href="https://www.facebook.com/suthiphong.pinkartist">Jingjo Suthiphong Thaisuriya<a></strong></label>
+                                      <p style="margin:0;padding:0;margin-left:0px;font-size:15px;color:#90949c;margin-bottom:5px;margin-top:5px;">181 followers</p>
+                                      <div style="margin-left:0px;">
+                                        <label><i class="fa fa-address-book" style="font-size:24px"></i> 0999360904</label><br>
+                                        <label><i class="fa fa-facebook-official" aria-hidden="true" style="font-size:24px"></i><a href="https://www.facebook.com/suthiphong.pinkartist"> @facebook/suthiphong.pinkartist</a></label><br>
+                                        <label><i class="fa fa-rss" style="font-size:24px"></i> LINE ID : jk.stu</label><br>
+                                        <label><i class="fa fa-github" style="font-size:24px"></i><a href="https://github.com/exjob007"> @Jingjo_D</a></label><br>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="details_3" style="margin-top:10px;">
+                                  <p style="margin:0px;padding:0px;"><strong>Technology (Junior)</strong></p>
+                                  <p style="font-size:14px;"><strong>Front End : </strong>HTML ,CSS ,JAVASCRIPT</p>
+                                  <p style="font-size:14px;"><strong>Frameworks : </strong>React ,React Native ,Jquery ,Bootstrap</p>
+                                  <p style="font-size:14px;"><strong>Back End : </strong>PHP, Nodejs</p>
+                                  <p style="font-size:14px;"><strong>Database&ORM Database : </strong>Mysql ,Sqlite ,Squelize</p>
+                                  <p style="font-size:14px;"><strong>Other : </strong>npm ,yarn ,Git ,Docker ,Linux</p>
+                                </div>
+                              </div>
+                  </div>
+        </div>
+        <div id="miniscreen">
+          <div class="mini_head">
+            PORTFOLIO
+          </div>
+          <div id="mini_content">
+            <div class="mini_Box">
+              <div id="card">
+                  <div id="mini_card">
+                      <img style="width:100px;height:100px;" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/14991954_1694196114227202_5804768724753502977_n.jpg?_nc_cat=111&_nc_ht=scontent.fbkk2-6.fna&oh=3b94540253e09a6a82873e55c764aaf3&oe=5D37E39E"></img>
+                  </div>
+                  <div id="mini_card2">
+                      <label style="margin-left:0px;color:#365899;"><strong><a href="https://www.facebook.com/suthiphong.pinkartist" style="font-size:4vw">Jingjo Suthiphong Thaisuriya<a></strong></label><br>
+                      <label style="font-size:15px;"><i class="fa fa-address-book" style="font-size:15px"></i> 0999360904</label><br>
+                      <label style="font-size:15px;"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size:15px"></i><a href="https://www.facebook.com/suthiphong.pinkartist" style="font-size:4vw"> @facebook/suthiphong.pinkartist</a></label><br>
+                      <label style="font-size:15px;"><i class="fa fa-rss" style="font-size:15px;"></i> LINE ID : jk.stu</label><br>
+                      <label style="font-size:15px;"><i class="fa fa-github" style="font-size:15px"></i><a href="https://github.com/exjob007"> @Jingjo_D</a></label><br>
+                  </div>
               </div>
-            </div>
+             </div>
+             <div class="mini_Box">
+               <p style="font-size:20px;margin:0px;">Technology (Junior)</p>
+               <p style="font-size:13px;margin:10px;"><strong>Front End : </strong>HTML ,CSS ,JAVASCRIPT</p>
+               <p style="font-size:13px;margin:10px;"><strong>Frameworks : </strong>React ,React Native ,Jquery ,Bootstrap</p>
+               <p style="font-size:13px;margin:10px;"><strong>Back End : </strong>PHP, NodeJS</p>
+               <p style="font-size:13px;margin:10px;"><strong>Database&ORM Database : </strong>Mysql ,Sqlite ,Squelize</p>
+               <p style="font-size:13px;margin:10px;"><strong>Other : </strong>npm ,yarn ,Git ,Docker ,Linux</p>
+              </div>
+             <div class="mini_Box">
+               <p style="font-size:20px;margin:0px;">Let us introduce</p>
+               <p style="font-size:13px;">Hello, My name is Suthiphong Thaisuriya. My nickname is Jo.
+                 I live in Chonburi. My inspiration is the Movie "The Social Network" and I want to be success as Mark.</p>
+              </div>
+
+              <div class="mini_Box">
+                <p style="font-size:20px;margin:0px;">Work Expereince</p>
+                <p style="font-size:13px;margin-bottom:5px;">9471Network (2017-2018) <label style="color:#000">IT-Support</label>
+                <li style="margin-left:30px; font-size:12px;">Install os (Window, program.)</li>
+                <li style="margin-left:30px;font-size:12px;">Config Router AP. CCTV (NVR, Ip camera)</li>
+
+                <p style="font-size:13px;margin-bottom:5px;">Business Service Alliance (BSA) (2018-Present) <label style="color:#000">IT-Support</label>
+                  <li style="margin-left:30px; font-size:12px;">Prototype Demo Project (Nodejs, Raspberry Pi,Arduino , Linux, MYSQL)</li>
+                  <li style="margin-left:30px;font-size:12px;">Software&Technology : Open SCADA, Docker</li>
+               </div>
 
 
-        </div>
 
-        <div class="details_3" style="margin-top:10px;">
-          <p style="margin:0px;padding:0px;"><strong>Technology (Junior)</strong></p>
-          <p style="font-size:14px;"><Strong>Web develope</strong> : PHP, HTML , CSS , JAVASCRIPT (EcmaScript)</p>
-          <p style="font-size:14px;"><Strong>DATABASE</strong> : MYSQL , SQLITE
-          <p style="font-size:14px;"><Strong>Framework&Library</strong> : NodeJs, ReactJS, React Native
-          <p style="font-size:14px;"><Strong>Other</strong> : Linux, Docker
-
-
-
-
-        </div>
-
+          </div>
 
         </div>
 
